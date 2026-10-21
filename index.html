@@ -83,7 +83,7 @@ let bgSpr=null;
 function mkBg(){
   const s=mks(W,H),g=s.x.createLinearGradient(0,0,0,H);
   // Smooth day/night cycle: each phase lasts about 35 seconds.
-  const phase=(time%2400)/2400;
+  const phase=(time%1200)/1200;
   const stops=[
     ['#ffb36b','#ffe0a1','#f8c7a1'], // sunrise
     ['#4ca8e8','#9de2ff','#e2f7ff'], // day
